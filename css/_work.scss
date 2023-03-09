@@ -8,17 +8,13 @@ $color: #0cf;
         display: flex;
         flex-wrap: wrap;
 
-        @media (max-width: 600px) {
-            .work-container{
-                display: block;
-            }
-        }
+
     }
 
     .card{
         background-color: white;
-        width: 90%;
-        margin: 50px auto;
+        width: calc(33.33% - 2rem);
+        margin: 1rem;
         border-radius: 10px;
         overflow: hidden;
         padding-bottom: 20px;
@@ -82,3 +78,16 @@ $color: #0cf;
 
     
 }
+
+        @media (max-width: 600px) {
+            .work-container{
+                display: block;
+
+                .card{
+                margin: 1rem auto;
+                width: 90%;
+            }
+            }
+
+            
+        }
