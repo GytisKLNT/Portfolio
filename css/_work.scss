@@ -3,6 +3,7 @@ $color: #0cf;
 
 .work{
     background: linear-gradient(to left, #4ecdc4, #556270);
+    padding: 1rem;
 
     .work-container{
         display: flex;
@@ -79,7 +80,7 @@ $color: #0cf;
     
 }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             .work-container{
                 display: block;
 

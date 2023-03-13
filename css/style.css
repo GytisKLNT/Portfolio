@@ -269,6 +269,7 @@ header #nav-icon1.open span:nth-child(3) {
 
 .work {
   background: linear-gradient(to left, #4ecdc4, #556270);
+  padding: 1rem;
 }
 .work .work-container {
   display: flex;
@@ -324,7 +325,7 @@ header #nav-icon1.open span:nth-child(3) {
   color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .work-container {
     display: block;
   }
