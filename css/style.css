@@ -276,53 +276,56 @@ header #nav-icon1.open span:nth-child(3) {
   flex-wrap: wrap;
 }
 .work .card {
-  background-color: white;
   width: calc(33.33% - 2rem);
   margin: 1rem;
   border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 20px;
 }
-.work .card .presentation {
-  width: 300px;
-  height: 150px;
-  background-position: center;
-  background-size: cover;
+.work .card .example1, .work .card .example2, .work .card .example3 {
+  height: 15rem;
+  background-position: top;
   background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 0.5s ease-in-out;
 }
-.work .card .website1 {
-  width: 100%;
+.work .card .example1 {
   background-image: url(..//assets/website1.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-.work .card .website2 {
-  width: 100%;
-  background-image: url(..//assets/website2.png);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+.work .card .example2 {
+  background-image: url(..//assets/website1.png);
+}
+.work .card .example3 {
+  background-image: url(..//assets/website1.png);
 }
 .work .card .card-text {
   padding: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
 }
-.work .card .visit-button {
-  margin: 20px;
-  border: 2px solid black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-  letter-spacing: 2px;
+.work .card .card-text .links-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
-.work .card .visit-button:hover {
-  background: black;
-  color: white;
+.work .card .card-text .links-list .visit-button {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+}
+.work .card:hover .example1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/website1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.work .card:hover .card-text {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
