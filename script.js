@@ -42,11 +42,25 @@ let link = document.querySelectorAll('.menuLink');
 
 // after submiting a form
 
- let submit = document.getElementById('submitButton');
- let thanks = document.getElementById('thanks');
+//  let submit = document.getElementById('submitButton');
+//  let thanks = document.getElementById('thanks');
 
- submit.addEventListener('click', () =>{
+//  submit.addEventListener('click', () =>{
    
-    thanks.style.display = "block";
- });
+//     thanks.style.display = "block";
+//  });
+
+ const form = document.forms.contactMe;
+
+ form.addEventListener("submit", (e)=> {
+  e.preventDefault();
+
+  const name = e.target.elements.name.value.trim();
+  const email = e.target.elements.email.value.trim().toLowerCase();
+  const message = e.target.elements.message.value.trim();
+
+  const toSend = { name, email, message };
+
+  console.log(toSend);
+ })
 
