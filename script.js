@@ -61,6 +61,22 @@ let link = document.querySelectorAll('.menuLink');
 
   const toSend = { name, email, message };
 
-  console.log(toSend);
- })
+  sendEmail(toSend);
+ });
+
+ const sendEmail = async (toSend) => {
+  try {
+    const res = await fetch("http://localhost:8080/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(toSend),
+    });
+
+    const data = await res.json();
+  } catch (error) {
+    alert(err.message || "An error has happened. Try again later.");
+  }
+ }
 
