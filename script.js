@@ -41,14 +41,7 @@ let link = document.querySelectorAll('.menuLink');
 
 
 // after submiting a form
-
-//  let submit = document.getElementById('submitButton');
-//  let thanks = document.getElementById('thanks');
-
-//  submit.addEventListener('click', () =>{
-   
-//     thanks.style.display = "block";
-//  });
+ let thanks = document.getElementById('thanks');
 
  const form = document.forms.contactMe;
 
@@ -62,6 +55,9 @@ let link = document.querySelectorAll('.menuLink');
   const toSend = { name, email, message };
 
   sendEmail(toSend);
+
+  form.reset();
+
  });
 
  const sendEmail = async (toSend) => {
@@ -74,7 +70,7 @@ let link = document.querySelectorAll('.menuLink');
       body: JSON.stringify(toSend),
     });
 
-    const data = await res.json();
+    thanks.style.display = "block";
   } catch (error) {
     alert(err.message || "An error has happened. Try again later.");
   }
