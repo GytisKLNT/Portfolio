@@ -49,9 +49,13 @@ body {
 header {
   background-color: rgb(245, 245, 245);
   width: 100%;
+  position: fixed;
+}
+header .container {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  max-width: 85rem;
+  margin: 0 auto;
 }
 header .logo {
   background: url(../assets/logos_black.png);
@@ -60,7 +64,6 @@ header .logo {
   background-size: cover;
   width: 150px;
   height: 70px;
-  margin-left: 20px;
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
@@ -69,7 +72,6 @@ header .logo:hover, header .logo:focus {
 }
 header .full-navigation {
   display: none;
-  margin-right: 1rem;
 }
 header .full-navigation li {
   margin: 0 1rem;
@@ -220,7 +222,7 @@ header #nav-icon1.open span:nth-child(3) {
   transform: translateX(0px) translateY(70px);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   header .full-navigation {
     display: flex;
   }
@@ -269,11 +271,18 @@ header #nav-icon1.open span:nth-child(3) {
 
 .work {
   background: linear-gradient(to left, #4ecdc4, #556270);
-  padding: 1rem;
+  padding: 3rem 0;
+}
+.work h2 {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 .work .work-container {
   display: flex;
   flex-wrap: wrap;
+  max-width: 85rem;
+  margin: 0 auto;
 }
 .work .card {
   width: calc(33.33% - 2rem);

@@ -3,11 +3,24 @@ $color: #0cf;
 
 .work{
     background: linear-gradient(to left, #4ecdc4, #556270);
-    padding: 1rem;
+    padding: 3rem 0;
+
+    h2{
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        
+    }
 
     .work-container{
         display: flex;
         flex-wrap: wrap;
+        max-width: 85rem;
+        margin: 0 auto;
+
+        
+
+
 
 
     }

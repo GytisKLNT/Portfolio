@@ -3,9 +3,15 @@
 header{
     background-color: rgb(245, 245, 245);
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+
     position: fixed;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      max-width: 85rem;
+      margin: 0 auto;
+    }
 
 
     .logo{
@@ -15,7 +21,6 @@ header{
         background-size: cover;
         width: 150px;
         height: 70px;
-        margin-left: 20px;
         opacity: 0.7;
         transition: 0.3s ease-in-out;
 
@@ -34,7 +39,6 @@ header{
         
         
         display: none;
-        margin-right: 1rem;
 
         li{
             margin: 0 1rem;
@@ -246,7 +250,7 @@ header{
   }
 
 
-  @media (min-width: 600px) {
+  @media (min-width: 800px) {
    header .full-navigation{
         
       display: flex;
