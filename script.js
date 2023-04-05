@@ -42,6 +42,7 @@ let link = document.querySelectorAll('.menuLink');
 
 // after submiting a form
  let thanks = document.getElementById('thanks');
+ let errorMsg = document.getElementById('error');
 
  const form = document.forms.contactMe;
 
@@ -70,9 +71,11 @@ let link = document.querySelectorAll('.menuLink');
       body: JSON.stringify(toSend),
     });
 
+
     thanks.style.display = "block";
-  } catch (error) {
+  } catch (err) {
     alert(err.message || "An error has happened. Try again later.");
+    errorMsg.style.display = "block";
   }
  }
 
