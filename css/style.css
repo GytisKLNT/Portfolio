@@ -270,7 +270,7 @@ header #nav-icon1.open span:nth-child(3) {
 }
 
 .work {
-  background: linear-gradient(to left, #4ecdc4, #556270);
+  background: linear-gradient(to left, #4ecdc4, #4f7aa7);
   padding: 3rem 0;
 }
 .work h2 {
@@ -388,7 +388,7 @@ header #nav-icon1.open span:nth-child(3) {
   border: none;
   text-transform: uppercase;
   font-weight: 600;
-  background: linear-gradient(to left, #4ecdc4, #556270);
+  background: linear-gradient(to left, #4ecdc4, #4f7aa7);
   color: white;
   cursor: pointer;
   transition: 0.3s ease-in-out;
