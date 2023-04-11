@@ -50,3 +50,12 @@ footer{
         width: 30px;
     }
 }
+
+
+@media (min-width: 800px) {
+
+footer {
+    display: flex;
+}
+    
+}

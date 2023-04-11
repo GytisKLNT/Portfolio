@@ -458,4 +458,10 @@ footer .social ul li {
 }
 footer .socialLogo {
   width: 30px;
+}
+
+@media (min-width: 800px) {
+  footer {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
