@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Gytis.K</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
        <!-- Landing page -->
 
        <section class="landing" id="About">
-           <div class="landing-container">
+           <div data-aos="fade-up" data-aos-duration="3000"  class="landing-container">
                 <h1>
                     <span id="hello">Hello</span> <br><br><br>
                     I'm Gytis Kalanta <br><br>
@@ -67,35 +68,40 @@
 
        <section class="about" id="about">
             <div class="about-container">
-                <article class="aboutMe">
+                <article  data-aos="fade-up" data-aos-duration="3000" class="aboutMe">
                     <h2>Who am I?</h2>
                     <div class="separator"></div>
                     <p>Hi I'm Gytis. I always had a simple dream to go to coffe shop in the morning (*not in Netherlands :D) get myself a caramel macchiato open my laptop and work. So 2 years ago I decided to change my profession and started learning programming on my own. Realizing that I like solving problems and have the best feeling when something that i made works, I moved to <a href="https://codeacademy.lt/">CodeAcademy</a> where I successfully completed intensive Front-End Beginners and Advanced Courses.
                     </p>
                 </article>
 
-                <article class="skills">
-                    <h2 >Skills</h2>
-                    <ul class="skillsList">
-                        <li><img src="assets/html5-brands.svg" alt="HTML"></li>
-                        <li><img src="assets/css3-alt-brands.svg" alt="CSS"></li>
-                        <li><img src="assets/js-square-brands.svg" alt="JavaScript"></li>
-                        <li><img src="assets/sass-brands.svg" alt="SASS"></li>
-                        <li><img src="assets/bootstrap-brands.svg" alt="Bootstrap"></li>
-                        <li><img src="assets/github-brands.svg" alt="Github"></li>
-                        <li><img src="assets/node-js.svg" alt="NodeJs"></li>
-                        <li><img src="assets/react.svg" alt="React"></li>
-                        
-                    </ul>
+                <article data-aos="fade-up" data-aos-duration="3000"  class="skills">
+                    <div data-aos="fade-up" data-aos-duration="3000" >
+                        <h2 >Skills</h2>
+                        <ul class="skillsList">
+                            <li><img src="assets/html5-brands.svg" alt="HTML"></li>
+                            <li><img src="assets/css3-alt-brands.svg" alt="CSS"></li>
+                            <li><img src="assets/js-square-brands.svg" alt="JavaScript"></li>
+                            <li><img src="assets/sass-brands.svg" alt="SASS"></li>
+                            <li><img src="assets/bootstrap-brands.svg" alt="Bootstrap"></li>
+                            <li><img src="assets/github-brands.svg" alt="Github"></li>
+                            <li><img src="assets/node-js.svg" alt="NodeJs"></li>
+                            <li><img src="assets/react.svg" alt="React"></li>
+                            
+                        </ul>
+                    </div>
+                   
+                    <div data-aos="fade-up" data-aos-duration="3000">
+                        <h2>Other skills</h2>
+                        <ul class="otherSkills">
+                            <li><img src="assets/icons8-adobe-photoshop.svg" alt="Photoshop"></li>
+                            <li><img src="assets/icons8-adobe-animate-48.png" alt="Animate"></li>
+                            <li><img src="assets/icons8-adobe-illustrator-48.png" alt="Ilustrator"></li>
+                            <li><img src="assets/icons8-davinci-resolve-48.png" alt="DaVinci Resolve"></li>
+                            <li><img src="assets/icons8-adobe-premiere-pro-48.png" alt="Adobe Premiere"></li>
+                        </ul>
+                    </div>
 
-                    <h2>Other skills</h2>
-                    <ul class="otherSkills">
-                        <li><img src="assets/icons8-adobe-photoshop.svg" alt="Photoshop"></li>
-                        <li><img src="assets/icons8-adobe-animate-48.png" alt="Animate"></li>
-                        <li><img src="assets/icons8-adobe-illustrator-48.png" alt="Ilustrator"></li>
-                        <li><img src="assets/icons8-davinci-resolve-48.png" alt="DaVinci Resolve"></li>
-                        <li><img src="assets/icons8-adobe-premiere-pro-48.png" alt="Adobe Premiere"></li>
-                    </ul>
                 </article>
 
             </div>
@@ -103,19 +109,20 @@
 
         <!-- My work -->
 
-        <section class="work" id="work">
+        <section data-aos="fade-up" data-aos-duration="3000" class="work" id="work">
             <h2>MY WORK</h2>
+            <div class="separator"></div>
             <div class="work-container">
                 
                 <div class="card">
                     <div class="example1">
                         <div class="card-text">
-                            <p>My portfolio website I used HTML CSS and JavaScript to create it.</p>
+                            <p>Basketball agent website I`m creating with React.js</p>
                             <ul class="links-list">
-                                <li><a href="https://gytisklnt.github.io/egzaminas/" target="_blank" rel="noopener noreferrer">
+                                <li><a href="https://seahorse-app-2-mjpkx.ondigitalocean.app/" target="_blank" rel="noopener noreferrer">
                                     <img class="visit-button" src="assets/desktop-solid.svg" alt="browser">
                                 </a></li>
-                                <li><a href="https://gytisklnt.github.io/egzaminas/" target="_blank" rel="noopener noreferrer">
+                                <li><a href="https://github.com/GytisKLNT/agentasFe" target="_blank" rel="noopener noreferrer">
                                     <img class="visit-button" src="assets/github-brands.svg" alt="github">
                                 </a></li>
                             </ul>
@@ -168,8 +175,9 @@
             </div>
         </section>
             <!-- Contact Me -->
-        <section class="contact" id="contact">
+        <section  data-aos="fade-up" data-aos-duration="3000" class="contact" id="contact">
             <h2>CONTACT ME</h2>
+            <div class="separator"></div>
             <form name="contactMe" class="form">
                 <input name="name" class="inputas" type="text" placeholder="Name" id="name" required> <br><br>
                 <input  name="email" class="inputas"type="email" placeholder="E-mail" id="email" required> <br><br>
@@ -204,5 +212,9 @@
 
 
    <script src="./script.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
 </body>
 </html>

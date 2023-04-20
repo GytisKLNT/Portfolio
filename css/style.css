@@ -12,18 +12,15 @@ html {
 
 body {
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: black;
-}
-
-.landing {
-  width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/portfolio-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-attachment: fixed;
+}
+
+.landing {
+  width: 100%;
 }
 .landing .landing-container {
   color: whitesmoke;
@@ -232,7 +229,6 @@ header #nav-icon1.open span:nth-child(3) {
 }
 .about {
   width: 100%;
-  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   padding: 50px 0;
 }
@@ -270,7 +266,6 @@ header #nav-icon1.open span:nth-child(3) {
 }
 
 .work {
-  background: linear-gradient(to left, #4ecdc4, #4f7aa7);
   padding: 3rem 0;
 }
 .work h2 {
@@ -347,11 +342,7 @@ header #nav-icon1.open span:nth-child(3) {
   }
 }
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/contact-foto.jpg);
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   color: white;
   padding: 50px 20px;
