@@ -252,11 +252,8 @@ header #nav-icon1.open span:nth-child(3) {
   font-size: 30px;
   letter-spacing: 1px;
 }
-.about .aboutMe .separator {
-  width: 150px;
-  height: 8px;
-  background-color: rgb(116, 187, 181);
-  margin: 30px auto;
+.about .aboutMe .codeAcademy {
+  color: rgb(116, 187, 181);
 }
 .about .skills {
   text-align: center;
@@ -306,13 +303,13 @@ header #nav-icon1.open span:nth-child(3) {
   transition: background-image 0.5s ease-in-out;
 }
 .work .card .example1 {
-  background-image: url(..//assets/website1.png);
+  background-image: url(..//assets/websiteReact.png);
 }
 .work .card .example2 {
   background-image: url(..//assets/website1.png);
 }
 .work .card .example3 {
-  background-image: url(..//assets/website1.png);
+  background-image: url(..//assets/websiteReact.png);
 }
 .work .card .card-text {
   padding: 20px;
@@ -331,6 +328,11 @@ header #nav-icon1.open span:nth-child(3) {
   width: 3rem;
   height: 3rem;
   margin: 1rem;
+  opacity: 0.6;
+}
+.work .card .card-text .links-list .visit-button:hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
 }
 .work .card:hover .example1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/website1.png);
