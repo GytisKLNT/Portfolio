@@ -3,6 +3,7 @@ $color: #0cf;
 
 .work{
     padding: 3rem 0;
+    margin: 10rem auto;
 
     h2{
         font-size: 3rem;
@@ -86,12 +87,23 @@ $color: #0cf;
     }
 
     .card:hover{
-        .example1{
-            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(..//assets/website1.png);
+        .example1, .example2, .example3{
+            
             background-position: top;
             background-repeat: no-repeat;
             background-size: cover;
         }
+
+        .example1{
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(..//assets/websiteReact.png);
+        }
+        .example2{
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(..//assets/websiteReact.png);
+        }
+        .example3{
+            background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(..//assets/websiteReact.png);
+        }
+
         .card-text{
             opacity: 1;
         }

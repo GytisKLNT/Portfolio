@@ -45,8 +45,8 @@ body {
   transition: 0.3s ease-in-out;
 }
 .landing .landing-container .photo {
-  margin-top: 50px;
-  width: 150px;
+  margin-top: 5rem;
+  width: 15rem;
   border-radius: 100%;
 }
 
@@ -243,7 +243,7 @@ header #nav-icon1.open span:nth-child(3) {
 .about .aboutMe {
   text-align: center;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 10rem auto;
   padding: 50px 0;
   font-size: 1.3rem;
   line-height: 2rem;
@@ -274,6 +274,7 @@ header #nav-icon1.open span:nth-child(3) {
 
 .work {
   padding: 3rem 0;
+  margin: 10rem auto;
 }
 .work h2 {
   font-size: 3rem;
@@ -334,11 +335,19 @@ header #nav-icon1.open span:nth-child(3) {
   opacity: 1;
   transition: 0.2s ease-in;
 }
-.work .card:hover .example1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/website1.png);
+.work .card:hover .example1, .work .card:hover .example2, .work .card:hover .example3 {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.work .card:hover .example1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/websiteReact.png);
+}
+.work .card:hover .example2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/websiteReact.png);
+}
+.work .card:hover .example3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(..//assets/websiteReact.png);
 }
 .work .card:hover .card-text {
   opacity: 1;
